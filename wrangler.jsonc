@@ -1,0 +1,20 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "my-first-cf-workers-app",
+	"compatibility_date": "2025-10-08",
+	"upload_source_maps": true,
+	"main": "./server.ts",
+	"assets": {
+		"directory": "./build/client"
+	},
+	"compatibility_flags": ["nodejs_compat"],
+	"observability": {
+		"enabled": true
+	},
+	"kv_namespaces": [
+		{
+			"binding": "TO_DO_LIST",
+			"id": "9917872d88be4d2d833bc105c77dffc2"
+		}
+	]
+}
